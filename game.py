@@ -45,10 +45,17 @@ def main(page: ft.Page):
         container_keira.content.size = 0
         container_keira.content.value = "keira"
 
+        container_rapunzel.image.opacity = 1.0
+        container_rapunzel.on_click = jogar
+        container_rapunzel.content.size = 0
+        container_rapunzel.content.value = "keira"
+
         container_tori.image.opacity = 1.0
         container_tori.on_click = jogar
         container_tori.content.size = 0
         container_tori.content.value = "tori"
+
+        
         
         page.update()
 
