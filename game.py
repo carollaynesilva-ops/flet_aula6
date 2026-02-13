@@ -71,6 +71,25 @@ def main(page: ft.Page):
         ink=True,
         on_click=jogar
     )
+    # Container sla
+    container_rapunzel = ft.Container(
+        content=ft.Text(
+            "rapunzel",
+            size=0
+        ),
+        image=ft.DecorationImage(
+            src="images/rapunzel.jpg",
+            fit=ft.BoxFit.COVER
+        ),
+        width=120,
+        height=120,
+        margin=10,
+        bgcolor=ft.Colors.GREY_200,
+        border_radius=10,
+        alignment=ft.Alignment(0, 0),
+        ink=True,
+        on_click=jogar
+    )
 
     # Container TORI
     container_tori = ft.Container(
@@ -111,7 +130,8 @@ def main(page: ft.Page):
                 ft.Row(
                     [
                         container_keira,
-                        container_tori
+                        container_tori,
+                        container_rapunzel
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
